@@ -1,0 +1,69 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}message sent {% endblock %}
+{% block content %}
+
+<link href="{% static 'assets/img/favicon.png'%}" rel="icon">
+<link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+<link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+<link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+<link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+<link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+<link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="{% static 'assets/css/style.css'%}" rel="stylesheet">
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'website:homepage' %}"><h2 style="color: fuchsia; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Kunle<span style="color: black; ">Lap</span> Enterprise</h2></a>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul style="font-size: large !important;"> 
+          <li><a class="nav-link scrollto" href="{% url 'website:homepage' %}">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          
+          
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          
+          <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link scrollto" href="#faq">Faq</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'Product:showProducts' %}">Our Stores </a></li>
+          
+          <li><a class="nav-link scrollto" href="{% url 'website:contacting' %}">Contacts us</a></li>
+          <!--<li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>-->
+          
+          
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+<div class="mx-auto my-4 text-center">
+    <h1 class="fw-bolder text-success">We sent your message</h1>
+    <p class="my-5">You can send another in the <a href="{% url 'website:contacting' %}">contact page</a></p>
+</div>
+{% endblock %}
+ <!-- Vendor JS Files -->
+ <script src="{% static 'assets/vendor/purecounter/purecounter.js'%}"></script>
+ <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+ <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+ <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+ <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+ <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+ <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js'%}"></script>
+ <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+
+ <!-- Template Main JS File -->
+ <script src="{% static 'assets/js/main.js'%}"></script>
